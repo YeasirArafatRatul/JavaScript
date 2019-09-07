@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2>Tutorial</h2>
+		</div>
+
+		<div class="maincontent">
+			<script type="text/javascript">
+
+				var name ="Ratul";
+				var age = 22;
+				document.write("Hello! ", name,"<br/>Age:",age);
+				document.write("<br/>");
+
+				var a = 10;
+				var b = 30;
+				var sum = a+b;
+				var div = b/a;
+				document.write("Sum is " +sum+"<br/>");
+				document.write("Division is " +div+"<br/>")
+
+				// function
+				function FuncName(){
+					color = "Red"; //remove 'var' keyword to make a variable global
+				}
+
+				//function call
+				FuncName();
+				document.write(color+"<br/>")
+
+		    </script>
+		    <div id='Show'>
+			</div>
+			<script type="text/javascript">
+				//for output in JavaScript
+				//innerHTML, document.write(),window.alert(),console.log()
+				var firstname = "Arafat";
+				var lastname = "Ratul";
+
+				var fullname = firstname+" "+lastname;
+				document.getElementById("Show").innerHTML = fullname;
+				var warning = "Be Carefull"
+				alert(warning);
+				console.log(warning); //output in console
+			</script>
+			Write Here...
+		</div>
+
+		<div class="footer">
+			<h6>Copyright</h6>
+		</div>
+	</section>
+
+</body>
+</html>
