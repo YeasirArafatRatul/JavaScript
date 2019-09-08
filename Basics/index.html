@@ -13,7 +13,7 @@
 
 		<div class="maincontent">
 			<script type="text/javascript">
-
+//JAVA_SCRIPT is an Object Based Language
 				var name ="Ratul";
 				var age = 22;
 				document.write("Hello! ", name,"<br/>Age:",age);
@@ -24,7 +24,11 @@
 				var sum = a+b;
 				var div = b/a;
 				document.write("Sum is " +sum+"<br/>");
-				document.write("Division is " +div+"<br/>")
+				document.write("Division is " +div+"<br/>");
+				document.write(typeof(sum)+"<br/>");
+
+				var name = new String("Yeasir Arafat Ratul");
+				document.write(typeof(name)+"<br/>");
 
 				// function
 				function FuncName(){
@@ -47,9 +51,52 @@
 				var fullname = firstname+" "+lastname;
 				document.getElementById("Show").innerHTML = fullname;
 				var warning = "Be Carefull"
-				alert(warning);
+				//alert(warning);
 				console.log(warning); //output in console
+				console.info("%s","You are working on Console");
+				console.error("You got error");
+				console.warn("Warning!");
+				console.time("Check Time");
+				console.timeEnd("Check Time");
+				
+				//Arrays
+				var array = [1,3,4,5];
+				var arrayTwo = [3,4,2,5];
+				document.write(array[0]+"<br/>");
+				var finalArray = array.concat(arrayTwo);
+				document.write(finalArray);
+
+
+				//Sorting
+				var color = ["Green","Red","Blue"];
+				document.write("<br/> Before Sorting: "+color+ "<br/>");
+				color.sort()
+				document.write("After Sorting :" +color+"<br/>");
+				document.write(color.length);
+				color.shift(1); //removing data from array
+				document.write(color);
+				color.push("White");
+				document.write(color);
+				color.pop("White");
+				document.write(color);
 			</script>
+
+			<div align="center">
+				<small>Object Creating...</small>
+				<br/>
+			<script type="text/javascript">
+              //Create Objects
+				var person = {
+					firstname: "Arafat",
+					lastname:"Ratul",
+					age:"22",
+					func: function(){
+						return this.firstname + this.lastname;
+					}
+				}
+				document.write(person.func())
+			</script>
+			</div>
 			Write Here...
 		</div>
 
