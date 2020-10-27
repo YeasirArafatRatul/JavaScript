@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Access element using name</title>
+</head>
+<body>
+    <form>
+        Name:<input type="text" name="user"><br>
+        Age:<input type="number" name="age"><br>
+        <input type="submit" onclick="getvalues()">
+    </form>
+    <script>
+        function getvalues(){
+            var name = document.getElementsByName('user').item(0).value;
+            var age = document.getElementsByName('age').item(0).value;
+            alert("Name="+name+" Age="+age);    
+        }
+    </script>
+</body>
+</html>

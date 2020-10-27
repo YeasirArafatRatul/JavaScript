@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SetTimeOut</title>
+</head>
+<body onload="red()" id="mainbody">
+    
+        <script>
+        var mbdy = document.getElementById('mainbody');
+        function red(){
+            mbdy.style.backgroundColor="red";
+            setTimeout(green,2000);
+        }
+        function green(){
+            mbdy.style.backgroundColor="green";
+            setTimeout(blue,2000);
+        }
+        function blue(){
+            mbdy.style.backgroundColor="blue";
+            setTimeout(red,2000);
+        }
+        
+//    function winload(){
+//        setTimeout(msg,3000);
+//    }
+//        function msg(){
+//            alert("This is JavaScript");
+//
+//        }
+    </script>
+</body>
+</html>

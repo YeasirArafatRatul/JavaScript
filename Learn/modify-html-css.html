@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modify HTML and CSS</title>
+    <style>
+        #hid{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+   <button onclick="changeh1()">Click here</button>
+    <h1 id="hid">This is Heading 1</h1>
+    <h2>This is heading 2</h2>
+    <p>A Para</p>
+    <h1>This is Heading 1</h1>
+    <h2>This is heading 2</h2>
+    <p>A Para</p>
+    
+    <script>
+    function changeh1(){
+        //document.getElementById('hid').innerHTML = "This is JavaScript";
+//        document.getElementById('hid').style.color = "green";
+      var h = document.getElementById('hid');
+       h.innerHTML = "JavaScript";
+       h.style.backgroundColor="red";
+       h.style.color = "white";
+       h.style.textAlign = "center";    
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events: focus and blur</title>
+</head>
+<body>
+    <form>
+        Name:<input type="text" onfocus="focusfun(this)" onblur="blurfun(this)"><br>
+        Age:<input type="number" onfocus="focusfun(this)" onblur="blurfun(this)"><br>
+        <input type="submit">
+    </form>
+    
+    <script>
+       function focusfun(inputfield){
+          inputfield.style.backgroundColor="green"; 
+       } 
+      function blurfun(inputfield){
+          inputfield.style.backgroundColor="white";
+      }    
+    </script>
+</body>
+</html>

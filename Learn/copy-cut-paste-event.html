@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Copy, Cut and Paste Event</title>
+</head>
+<body>
+   <p oncopy="copyFun()">This is JavaScript </p>
+    <input type="text" value="JavaScript" oncut="cutFun()" onpaste = "pasteFun(this)">
+    
+    <script>
+    function cutFun(){
+        alert("Don't cut the value");
+    }
+    function copyFun(){
+        console.log("Don't copy...");
+    } 
+    function pasteFun(e){
+       e.style.backgroundColor="yellow"; 
+    }    
+    </script>
+</body>
+</html>

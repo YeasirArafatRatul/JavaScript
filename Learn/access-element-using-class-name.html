@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modify HTML and CSS</title>
+    <style>
+        .cl1{
+            color: red;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <button onclick="fun()">Click here</button>
+    <h1 class="cl1">This is Heading 1</h1>
+    <h2>This is heading 2</h2>
+    <p class="cl1">A Para</p>
+    <h1 class="cl1">This is Heading 1</h1>
+    <h2 class="cl1">This is heading 2</h2>
+    <p>A Para</p>
+    <h1>This is Heading 1</h1>
+    <h2 class="cl1">This is heading 2</h2>
+    <p class="cl1">A Para</p>
+    <h1>This is Heading 1</h1>
+    <h2>This is heading 2</h2>
+    <p>A Para</p>
+    <script>
+    function fun(){
+//       var h =  document.getElementsByTagName('h2').item(1);
+//       h.innerHTML = "This is using tag name";
+//       h.style.color = "red";
+        var h = document.getElementsByClassName('cl1').item(0);
+        h.style.textAlign = "left";
+        h.style.color = "blue";
+    }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard Events</title>
+</head>
+<body>
+    
+<!--   Name: <input type="text" onkeyup="convertToUpper(this)">-->
+   Enter a Key:<input type="text" onkeydown="getKey(event)">
+   <p id="pid"></p>
+    <script>
+//    function convertToUpper(namebox){
+//       namebox.value = namebox.value.toUpperCase(); 
+//    }
+      function getKey(event){
+          document.getElementById('pid').innerHTML = "Key="+event.key+" Keycode="+event.keyCode;
+      }  
+    </script>
+</body>
+</html>

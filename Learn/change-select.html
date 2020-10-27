@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Events: Change and Select</title>
+</head>
+<body>
+    <input type="text" value="JavaScript" onchange="changefun()" onselect="selectfun(this)">
+    <script>
+    function changefun(){
+        alert("Don't change the value");
+    }
+        function selectfun(val){
+           // alert("You selected the text");
+            val.style.color="red";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Events</title>
+    <style>
+        #div1{
+            width: 400px;
+            height: 400px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" onmouseover="mover(this)" onmouseout="mout(this)">
+        
+    </div>
+    
+    <script>
+    function mover(d){
+        //document.getElementById('div1').style.backgroundColor="red";
+        d.style.backgroundColor="red";
+    }
+    function mout(d){
+     document.getElementById('div1').style.backgroundColor="blue/";
+//     d.style.backgroundColor="blue";
+    }    
+    </script>
+</body>
+</html>
