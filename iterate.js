@@ -14,3 +14,14 @@ for (var key in obj) {
     //if you use obj.key (dot notation) the values will be 'undefined'
     console.log(obj[key])
 }
+
+
+console.log(Object.keys(obj)) //to show the keys in obj
+console.log(Object.values(obj)) //to show the values in obj
+console.log(Object.entries(obj)) //to show the [pkeys,value] in obj
+
+
+
+// clone an object
+
+var obj2 = Object.assign({}, obj)
